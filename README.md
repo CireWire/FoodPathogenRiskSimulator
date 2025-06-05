@@ -4,23 +4,25 @@ A scientific web application for simulating the growth and risk level of foodbor
 
 ## 🌟 Features
 
-- **Interactive Simulation**: Real-time pathogen growth modeling
-- **Risk Assessment**: Color-coded risk level indicators
+- **Interactive Simulation**: Real-time pathogen growth modeling using the Gompertz growth model
+- **Risk Assessment**: Color-coded risk level indicators (Low, Medium, High) with specific recommendations
 - **Customizable Parameters**:
   - Food type selection (Poultry, Dairy, Produce, Seafood)
-  - Temperature control monitoring
-  - Time abuse tracking
-  - pH level analysis
-  - Water activity measurement
-- **Visual Analytics**: Dynamic growth curve visualization
-- **Data Export**: Download simulation results for further analysis
+  - Temperature control monitoring (0-50°C)
+  - Time abuse tracking (0-72 hours)
+  - pH level analysis (3.5-7.5)
+  - Water activity measurement (0.85-1.0)
+- **Visual Analytics**: Dynamic growth curve visualization with Plotly
+- **Data Export**: Download simulation results as CSV for further analysis
+- **Real-time Updates**: Instant feedback on parameter changes
+- **Responsive Design**: Works on both desktop and mobile devices
 
 ## 🚀 Quick Start
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/CireWire/FoodPathogenRiskSimulator.git
-cd food-pathogen-simulator
+cd FoodPathogenRiskSimulator
 ```
 
 2. Create and activate a virtual environment:
@@ -50,11 +52,12 @@ streamlit run app.py
 
 The simulator uses a modified Gompertz growth model to predict pathogen population growth based on environmental conditions. The risk assessment takes into account:
 
-- Temperature abuse patterns
-- pH levels and their impact on growth
-- Water activity (aw) measurements
-- Time duration of exposure
-- Initial contamination levels
+- Temperature abuse patterns and their impact on growth rates
+- pH levels and their effect on microbial growth
+- Water activity (aw) measurements and their influence on pathogen survival
+- Time duration of exposure to risk factors
+- Initial contamination levels and their progression
+- Food matrix characteristics and their impact on growth
 
 ## 🛠️ Technical Stack
 
@@ -82,6 +85,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to all contributors who have helped shape this project
 - Special thanks to the Streamlit team for their amazing framework
 - Inspired by food safety research and best practices
+- Developed by The Helix Corporation
 
 ## 📞 Support
 
