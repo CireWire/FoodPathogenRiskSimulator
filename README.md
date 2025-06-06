@@ -19,6 +19,8 @@ A scientific web application for simulating the growth and risk level of foodbor
 
 ## 🚀 Quick Start
 
+### Option 1: Local Development
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/CireWire/FoodPathogenRiskSimulator.git
@@ -47,6 +49,29 @@ streamlit run app.py
 ```
 
 5. Open your browser and navigate to `http://localhost:8501`
+
+### Option 2: Docker Deployment
+
+1. Clone the repository:
+```bash
+git clone https://github.com/CireWire/FoodPathogenRiskSimulator.git
+cd FoodPathogenRiskSimulator
+```
+
+2. Build and run using Docker Compose:
+```bash
+docker-compose up --build
+```
+
+3. Open your browser and navigate to `http://localhost:8501`
+
+To stop the application:
+```bash
+docker-compose down
+```
+
+### Option 3: Visit App Site
+Visit the live application at [Food Pathogen Risk Simulator](https://food-pathogen-risk-simulator.streamlit.app)
 
 ## 📊 Scientific Background
 
